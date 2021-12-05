@@ -44,7 +44,7 @@ def draw_arrow(surf, color, posn, direction):
 
 
 def add_arrow_button(screen, regions, posn, direction):
-    draw_arrow(screen, pg.Color("black"), posn, direction)
+    draw_arrow(screen, "black", posn, direction)
     draw_arrow(regions, (direction, 0, 0), posn, direction)
 
 
@@ -100,7 +100,7 @@ def main(image_file=None):
     view_size = (30, 20)
     zoom_view_size = (view_size[0] * zoom_factor, view_size[1] * zoom_factor)
     win_size = (zoom_view_size[0] + 2 * margin, zoom_view_size[1] + 2 * margin)
-    background_color = pg.Color("beige")
+    background_color = "beige"
 
     pg.init()
 
